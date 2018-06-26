@@ -6,28 +6,17 @@
         <item quantity="other">%d likes</item>
     </plurals>
     <string-array name="user_photos">
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xpf1/t51.2885-15/s306x306/e15/10665483_429615813855717_1490926670_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10891026_694434897342602_1094773634_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10894920_1382218332084671_10354293_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10895429_768163716566132_692639371_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899087_405295322969722_20422376_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899123_922231267802027_1123900984_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10903214_589111004559561_1485881959_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10914479_770066599745785_704061869_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10914587_1580079332227764_829762970_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10919231_605000369644967_1578007175_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10932142_330866587116424_1327271556_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xfa1/t51.2885-15/s306x306/e15/10932410_1544715455813452_1107632347_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xfp1/t51.2885-15/s306x306/e15/891516_579817258815508_1989379587_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/1922172_719849754801056_911351010_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10914370_1519297625009641_722250486_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10903746_368501953321344_2002746420_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10903270_1397263717236338_950192395_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10903242_441936642627221_576882729_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899295_796858437028648_664655000_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899139_948470841831743_1406659049_n.jpg</item>
-        <item>http://scontent-a-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899123_922231267802027_1123900984_n.jpg</item>
-        <item>http://scontent-b-fra.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/10899087_405295322969722_20422376_n.jpg</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58a497585022517b8a09bc70/3ec0999592a01512b17bbae64a8342be/upload_2_15_2017_at_12_01_01_PM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c0a2ba537fe5c9b1240996/7f17a3bd6ad9bf1d07109cddcd562471/upload_3_8_2017_at_6_32_56_PM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c2bd02f45c258af34598e3/7676ca0a3d27507de5ac9a4ec857669b/upload_3_10_2017_at_8_49_41_AM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c2dadd011755098f47ea22/48d767a625061dcc94731bc6981af65c/upload_3_10_2017_at_10_57_06_AM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c2df56fc8c56aa9ace371e/a24b0c3cb7821a9e0cac8fd4ec6abe5e/upload_3_10_2017_at_11_16_10_AM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58a4eee2944961ae93107170/8c2ce156faf399c4dd73579ca42fc397/upload_2_15_2017_at_6_14_22_PM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c5a565eee50d2ce46c73e1/79c41767016f2db4676caf756045b04a/upload_3_12_2017_at_2_45_40_PM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c5a565eee50d2ce46c73e1/79c41767016f2db4676caf756045b04a/upload_3_12_2017_at_2_45_40_PM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c5aea22249b5bd73a6e303/69c0adfdd37269a8c546b3c5efc7f721/upload_3_12_2017_at_3_25_04_PM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58c5afcd27481c09a28e8e6e/407f789c24f3e75fe5fff7e6b0c4a8e7/upload_3_12_2017_at_3_30_03_PM.png</item>
+        <item>https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58d809ee1fd09bf2e53ab5c7/160046179e801cb973b6c8b9f24cd682/upload_3_26_2017_at_1_35_22_PM.pngg</item>
     </string-array>
-    <string name="user_profile_photo">http://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/929118_455075441302693_1605108410_a.jpg</string>
+    <string name="user_profile_photo">https://trello-attachments.s3.amazonaws.com/589cfc391971ba5ed80e018b/58d809ee1fd09bf2e53ab5c7/160046179e801cb973b6c8b9f24cd682/upload_3_26_2017_at_1_35_22_PM.png</string>
 </resources>
