@@ -40,11 +40,11 @@ public class UserProfileActivity extends BaseDrawerActivity implements RevealBac
 
     @BindView(R.id.ivUserProfilePhoto)
     ImageView ivUserProfilePhoto;
-    @BindView(R.id.vUserDetails)
+//    @BindView(R.id.vUserDetails)
     View vUserDetails;
     @BindView(R.id.btnFollow)
     Button btnFollow;
-    @BindView(R.id.vUserStats)
+//    @BindView(R.id.vUserStats)
     View vUserStats;
     @BindView(R.id.vUserProfileRoot)
     View vUserProfileRoot;
@@ -90,7 +90,7 @@ public class UserProfileActivity extends BaseDrawerActivity implements RevealBac
     private void setupUserProfileGrid() {
         final StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
         rvUserProfile.setLayoutManager(layoutManager);
-        rvUserProfile.setOnScrollListener(new RecyclerView.OnScrollListener() {
+        rvUserProfile.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 userPhotosAdapter.setLockedAnimations(true);
@@ -124,8 +124,8 @@ public class UserProfileActivity extends BaseDrawerActivity implements RevealBac
             vUserProfileRoot.setVisibility(View.VISIBLE);
             userPhotosAdapter = new UserProfileAdapter(this);
             rvUserProfile.setAdapter(userPhotosAdapter);
-            animateUserProfileOptions();
-            animateUserProfileHeader();
+//            animateUserProfileOptions();
+//            animateUserProfileHeader();
         } else {
             tlUserProfileTabs.setVisibility(View.INVISIBLE);
             rvUserProfile.setVisibility(View.INVISIBLE);

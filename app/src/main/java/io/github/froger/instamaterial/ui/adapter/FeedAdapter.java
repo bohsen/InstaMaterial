@@ -36,7 +36,7 @@ public class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context context;
     private OnFeedItemClickListener onFeedItemClickListener;
 
-    private boolean showLoadingView = false;
+    private boolean showLoadingView = true;
 
     public FeedAdapter(Context context) {
         this.context = context;
