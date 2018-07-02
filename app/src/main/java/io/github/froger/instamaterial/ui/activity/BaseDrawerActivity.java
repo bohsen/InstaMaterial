@@ -11,9 +11,9 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-import butterknife.BindView;
 import butterknife.BindDimen;
 import butterknife.BindString;
+import butterknife.BindView;
 import io.github.froger.instamaterial.R;
 import io.github.froger.instamaterial.ui.utils.CircleTransformation;
 
@@ -38,7 +38,7 @@ public class BaseDrawerActivity extends BaseActivity {
     @Override
     public void setContentView(int layoutResID) {
         super.setContentViewWithoutInject(R.layout.activity_drawer);
-        ViewGroup viewGroup = (ViewGroup) findViewById(R.id.flContentRoot);
+        ViewGroup viewGroup = findViewById(R.id.flContentRoot);
         LayoutInflater.from(this).inflate(layoutResID, viewGroup, true);
         bindViews();
         setupHeader();
@@ -59,7 +59,7 @@ public class BaseDrawerActivity extends BaseActivity {
 
     private void setupHeader() {
         View headerView = vNavigation.getHeaderView(0);
-        ivMenuUserProfilePhoto = (ImageView) headerView.findViewById(R.id.ivMenuUserProfilePhoto);
+        ivMenuUserProfilePhoto = headerView.findViewById(R.id.ivMenuUserProfilePhoto);
         headerView.findViewById(R.id.vGlobalMenuHeader).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,5 +89,4 @@ public class BaseDrawerActivity extends BaseActivity {
             }
         }, 200);
     }
-
 }

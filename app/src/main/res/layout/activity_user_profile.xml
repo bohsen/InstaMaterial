@@ -48,7 +48,7 @@
                 app:layout_collapseMode="parallax">
 
 
-                <ImageView
+                <android.support.v7.widget.AppCompatImageView
                     android:id="@+id/user_profile_profile_photo"
                     android:layout_width="@dimen/user_profile_avatar_size"
                     android:layout_height="@dimen/user_profile_avatar_size"

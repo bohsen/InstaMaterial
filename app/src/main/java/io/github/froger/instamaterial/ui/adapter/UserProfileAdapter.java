@@ -17,8 +17,8 @@ import com.squareup.picasso.Picasso;
 import java.util.Arrays;
 import java.util.List;
 
-import butterknife.ButterKnife;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import io.github.froger.instamaterial.R;
 import io.github.froger.instamaterial.Utils;
 
@@ -61,7 +61,7 @@ public class UserProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         bindPhoto((PhotoViewHolder) holder, position);
     }
 
-    private void bindPhoto(final PhotoViewHolder holder, int position) {
+    private void bindPhoto(final PhotoViewHolder holder, final int position) {
         Picasso.with(context)
                 .load(photos.get(position))
                 .resize(cellSize, cellSize)
@@ -69,7 +69,7 @@ public class UserProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 .into(holder.ivPhoto, new Callback() {
                     @Override
                     public void onSuccess() {
-                        animatePhoto(holder);
+                        animatePhoto(holder, position);
                     }
 
                     @Override
@@ -80,13 +80,13 @@ public class UserProfileAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         if (lastAnimatedItem < position) lastAnimatedItem = position;
     }
 
-    private void animatePhoto(PhotoViewHolder viewHolder) {
+    private void animatePhoto(PhotoViewHolder viewHolder, int position) {
         if (!lockedAnimations) {
-            if (lastAnimatedItem == viewHolder.getPosition()) {
+            if (lastAnimatedItem == position) {
                 setLockedAnimations(true);
             }
 
-            long animationDelay = PHOTO_ANIMATION_DELAY + viewHolder.getPosition() * 30;
+            long animationDelay = PHOTO_ANIMATION_DELAY + position * 30;
 
             viewHolder.flRoot.setScaleY(0);
             viewHolder.flRoot.setScaleX(0);
