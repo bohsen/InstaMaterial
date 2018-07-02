@@ -33,7 +33,7 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <android.support.constraint.ConstraintLayout
+            <android.support.constraint.motion.MotionLayout
                 android:id="@+id/vUserProfileRoot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
 
 
                 <ImageView
-                    android:id="@+id/ivUserProfilePhoto"
+                    android:id="@+id/user_profile_profile_photo"
                     android:layout_width="@dimen/user_profile_avatar_size"
                     android:layout_height="@dimen/user_profile_avatar_size"
                     android:layout_marginStart="8dp"
@@ -60,7 +60,7 @@
                     tools:layout_conversion_absoluteWidth="88dp" />
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/user_profile_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
@@ -68,32 +68,32 @@
                     android:text="John Smith"
                     android:textColor="#ffffff"
                     android:textSize="24sp"
-                    app:layout_constraintStart_toEndOf="@+id/ivUserProfilePhoto"
+                    app:layout_constraintStart_toEndOf="@+id/user_profile_profile_photo"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:layout_conversion_absoluteHeight="32dp"
                     tools:layout_conversion_absoluteWidth="232dp" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/user_profile_twitter_user"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="\@jsmith"
                     android:textColor="#bbbbbb"
                     android:textSize="12sp"
-                    app:layout_constraintStart_toStartOf="@+id/textView19"
-                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    app:layout_constraintStart_toStartOf="@+id/user_profile_name"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_name"
                     tools:layout_conversion_absoluteHeight="16dp"
                     tools:layout_conversion_absoluteWidth="232dp" />
 
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/user_profile_description"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:text="Mobile development passionate."
                     android:textColor="#ffffff"
                     android:textSize="12sp"
-                    app:layout_constraintStart_toStartOf="@+id/textView20"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20"
+                    app:layout_constraintStart_toStartOf="@+id/user_profile_twitter_user"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_twitter_user"
                     tools:layout_conversion_absoluteHeight="16dp"
                     tools:layout_conversion_absoluteWidth="232dp" />
 
@@ -107,15 +107,14 @@
                     android:text="following"
                     android:textColor="#ffffff"
                     android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView22"
-                    app:layout_constraintStart_toStartOf="@+id/textView21"
-                    app:layout_constraintTop_toBottomOf="@+id/textView21"
+                    app:layout_constraintEnd_toEndOf="@+id/user_profile_following_textview"
+                    app:layout_constraintStart_toStartOf="@+id/user_profile_description"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_description"
                     tools:layout_conversion_absoluteHeight="24dp"
                     tools:layout_conversion_absoluteWidth="208dp" />
 
-
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/user_profile_posts_count_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -124,8 +123,8 @@
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:textSize="20sp"
-                    app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
-                    app:layout_constraintEnd_toStartOf="@+id/textView23"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/user_profile_followers_count_textview"
+                    app:layout_constraintEnd_toStartOf="@+id/user_profile_followers_count_textview"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintHorizontal_chainStyle="spread"
                     app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +132,7 @@
                     tools:layout_conversion_absoluteWidth="44dp" />
 
                 <TextView
-                    android:id="@+id/textView26"
+                    android:id="@+id/user_profile_posts_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -142,15 +141,15 @@
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:textSize="12sp"
-                    app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
-                    app:layout_constraintEnd_toEndOf="@+id/textView24"
-                    app:layout_constraintStart_toStartOf="@+id/textView24"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/user_profile_followers_textview"
+                    app:layout_constraintEnd_toEndOf="@+id/user_profile_posts_count_textview"
+                    app:layout_constraintStart_toStartOf="@+id/user_profile_posts_count_textview"
                     tools:layout_conversion_absoluteHeight="16dp"
                     tools:layout_conversion_absoluteWidth="30dp" />
 
 
                 <TextView
-                    android:id="@+id/textView23"
+                    android:id="@+id/user_profile_followers_count_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -168,7 +167,7 @@
                     tools:layout_conversion_absoluteWidth="33dp" />
 
                 <TextView
-                    android:id="@+id/textView27"
+                    android:id="@+id/user_profile_followers_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -176,15 +175,15 @@
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView23"
-                    app:layout_constraintStart_toStartOf="@+id/textView23"
-                    app:layout_constraintTop_toBottomOf="@+id/textView23"
+                    app:layout_constraintEnd_toEndOf="@+id/user_profile_followers_count_textview"
+                    app:layout_constraintStart_toStartOf="@+id/user_profile_followers_count_textview"
+                    app:layout_constraintTop_toBottomOf="@+id/user_profile_followers_count_textview"
                     tools:layout_conversion_absoluteHeight="16dp"
                     tools:layout_conversion_absoluteWidth="50dp" />
 
 
                 <TextView
-                    android:id="@+id/textView25"
+                    android:id="@+id/user_profile_following_count_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -192,28 +191,28 @@
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:textSize="20sp"
-                    app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/user_profile_followers_count_textview"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintStart_toEndOf="@+id/user_profile_followers_count_textview"
                     tools:layout_conversion_absoluteHeight="27dp"
                     tools:layout_conversion_absoluteWidth="33dp" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/user_profile_following_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="following"
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:textSize="12sp"
-                    app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
-                    app:layout_constraintEnd_toEndOf="@+id/textView25"
-                    app:layout_constraintStart_toStartOf="@+id/textView25"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/user_profile_followers_textview"
+                    app:layout_constraintEnd_toEndOf="@+id/user_profile_following_count_textview"
+                    app:layout_constraintStart_toStartOf="@+id/user_profile_following_count_textview"
                     tools:layout_conversion_absoluteHeight="16dp"
                     tools:layout_conversion_absoluteWidth="50dp" />
 
-            </android.support.constraint.ConstraintLayout>
+            </android.support.constraint.motion.MotionLayout>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -236,21 +235,16 @@
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
-        <FrameLayout
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tlUserProfileTabs"
             android:layout_width="match_parent"
-            android:layout_height="48dp">
-
-            <android.support.design.widget.TabLayout
-                android:id="@+id/tlUserProfileTabs"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="?attr/colorAccent"
-                app:tabGravity="fill"
-                app:tabIndicatorColor="#5be5ad"
-                app:tabIndicatorHeight="4dp"
-                app:tabMode="fixed" />
-
-        </FrameLayout>
+            android:layout_height="48dp"
+            android:background="?attr/colorAccent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#5be5ad"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed" />
 
     </android.support.design.widget.AppBarLayout>
 

@@ -38,7 +38,7 @@ public class UserProfileActivity extends BaseDrawerActivity implements RevealBac
     @BindView(R.id.tlUserProfileTabs)
     TabLayout tlUserProfileTabs;
 
-    @BindView(R.id.ivUserProfilePhoto)
+    @BindView(R.id.user_profile_profile_photo)
     ImageView ivUserProfilePhoto;
 //    @BindView(R.id.vUserDetails)
     View vUserDetails;
@@ -124,8 +124,8 @@ public class UserProfileActivity extends BaseDrawerActivity implements RevealBac
             vUserProfileRoot.setVisibility(View.VISIBLE);
             userPhotosAdapter = new UserProfileAdapter(this);
             rvUserProfile.setAdapter(userPhotosAdapter);
-//            animateUserProfileOptions();
-//            animateUserProfileHeader();
+            animateUserProfileOptions();
+            animateUserProfileHeader();
         } else {
             tlUserProfileTabs.setVisibility(View.INVISIBLE);
             rvUserProfile.setVisibility(View.INVISIBLE);
@@ -141,12 +141,12 @@ public class UserProfileActivity extends BaseDrawerActivity implements RevealBac
     private void animateUserProfileHeader() {
            vUserProfileRoot.setTranslationY(-vUserProfileRoot.getHeight());
            ivUserProfilePhoto.setTranslationY(-ivUserProfilePhoto.getHeight());
-           vUserDetails.setTranslationY(-vUserDetails.getHeight());
-           vUserStats.setAlpha(0);
+//           vUserDetails.setTranslationY(-vUserDetails.getHeight());
+//           vUserStats.setAlpha(0);
 
            vUserProfileRoot.animate().translationY(0).setDuration(300).setInterpolator(INTERPOLATOR);
            ivUserProfilePhoto.animate().translationY(0).setDuration(300).setStartDelay(100).setInterpolator(INTERPOLATOR);
-           vUserDetails.animate().translationY(0).setDuration(300).setStartDelay(200).setInterpolator(INTERPOLATOR);
-           vUserStats.animate().alpha(1).setDuration(200).setStartDelay(400).setInterpolator(INTERPOLATOR).start();
+//           vUserDetails.animate().translationY(0).setDuration(300).setStartDelay(200).setInterpolator(INTERPOLATOR);
+//           vUserStats.animate().alpha(1).setDuration(200).setStartDelay(400).setInterpolator(INTERPOLATOR).start();
     }
 }
